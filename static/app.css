@@ -1,0 +1,15 @@
+#jugadores, #mensaje {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#jugadores > h2 {
+	padding: 2em;
+}
+
+#mensaje {
+	color: blue;
+}
+
+

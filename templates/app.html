@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'app.css') }}" />
+</head>
+<body>
+	<h1>Juego del Piedra, Papel, Tijera, Lagarto, Spock</h1>
+	</br>
+	<form>
+		<label>Seleccionar una jugada:</label>
+		<select id="jugada">
+			<option value="Piedra">Piedra</option>
+			<option value="Papel">Papel</option>
+			<option value="Tijera">Tijera</option>
+			<option value="Lagarto">Lagarto</option>
+			<option value="Spock">Spock</option>	
+		</select>
+		<button id="jugar">Jugar</button>
+	</form>
+
+	<div id="jugadores">
+		<h2>Jugador: <span id="DatosJugador"></span></h2>
+		<h2>PC: <span id="DatosPC"></span></h2>
+	</div>
+
+	<div id="mensaje">
+		<h1 id="Resultado"></h1>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="{{url_for('static', filename = 'app.js')}}"></script>
+
+</body>
+</html>
